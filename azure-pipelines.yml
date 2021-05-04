@@ -10,12 +10,10 @@ pr: none
 variables:
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-  isToDeploy: $[ne(variables['Build.Reason']]
 
 stages:
 - stage: Build
   displayName: Build stage
-  condition: eq(variables.isToDeploy,true)
   jobs:
   - job: Build
     displayName: Build
@@ -30,7 +28,6 @@ stages:
         retryCount: '2'
     - task: Maven@3
       displayName: Build and Deploy Artifacts
-      condition: eq(variables.isToDeploy,true)
       inputs:
         mavenPomFile: 'pom.xml'
         goals: 'deploy'
