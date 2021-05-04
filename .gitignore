@@ -2,3 +2,4 @@
 .idea
 starter-parent.iml
 release.properties
+pom.xml.releaseBackup
