@@ -112,7 +112,7 @@
     </distributionManagement>
     <scm>
         <developerConnection>scm:git:https://github.com/pagopa/tkm-ms-starter-parent.git</developerConnection>
-        <tag>my-branch</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
