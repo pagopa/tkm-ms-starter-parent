@@ -4,7 +4,7 @@
 > develop
 
  1. Run:<br>
-  	`mvn --set-upstream release:clean release:prepare`<br>
+  	`mvn --batch-mode release:clean release:prepare`<br>
  	`git checkout -b tmp/${version} starter-parent-${version}` <br>
  	`git push --set-upstream origin tmp/${version}`
  	
