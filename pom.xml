@@ -5,7 +5,7 @@
     <groupId>it.gov.pagopa.tkm.ms</groupId>
     <artifactId>starter-parent</artifactId>
     <packaging>pom</packaging>
-    <version>2.1.9</version>
+    <version>2.1.10</version>
 
     <properties>
         <java.version>1.8</java.version>
@@ -13,7 +13,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <common.version>2.5.7</common.version>
+        <common.version>2.5.8</common.version>
         <spring-feign.version>3.0.2</spring-feign.version>
         <shedlock-version>4.24.0</shedlock-version>
     </properties>
