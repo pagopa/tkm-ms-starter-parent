@@ -40,7 +40,7 @@ stages:
         javaHomeOption: 'JDKVersion'
         jdkVersionOption: '1.8'
         mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
+        mavenAuthenticateFeed: true
         effectivePomSkip: true
         sonarQubeRunAnalysis: false
     - task: Bash@3
