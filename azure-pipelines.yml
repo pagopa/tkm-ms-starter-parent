@@ -26,10 +26,10 @@ stages:
 #      inputs:
 #        secureFile: 'settings_v2.xml'
 #        retryCount: '2'
-    - task: MavenAuthenticate@0
-      displayName: 'Maven Authenticate'
-      inputs:
-        artifactsFeeds: sia-dds
+#    - task: MavenAuthenticate@0
+#      displayName: 'Maven Authenticate'
+#      inputs:
+#        artifactsFeeds: sia-dds
     - task: Maven@3
       displayName: Build and Deploy Artifacts
       inputs:
@@ -39,7 +39,7 @@ stages:
         javaHomeOption: 'JDKVersion'
         jdkVersionOption: '1.8'
         mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: false
+        mavenAuthenticateFeed: true
         effectivePomSkip: true
         sonarQubeRunAnalysis: false
     - script: cat /home/vsts/work/_temp/settings.xml
