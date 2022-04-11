@@ -30,17 +30,17 @@ stages:
       displayName: 'Maven Authenticate'
       inputs:
         artifactsFeeds: sia-dds
+    - script: cat /home/vsts/work/_temp/settings.xml
     - task: Maven@3
       displayName: Build and Deploy Artifacts
       inputs:
         mavenPomFile: 'pom.xml'
         goals: 'deploy'
-#        options: '-s $(settingsxml.secureFilePath)'
         publishJUnitResults: false
         javaHomeOption: 'JDKVersion'
         jdkVersionOption: '1.8'
         mavenVersionOption: 'Default'
-        mavenAuthenticateFeed: true
+        mavenAuthenticateFeed: false
         effectivePomSkip: true
         sonarQubeRunAnalysis: false
     - task: Bash@3
