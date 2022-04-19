@@ -26,10 +26,6 @@ stages:
       inputs:
         secureFile: 'settings_v2.xml'
         retryCount: '2'
-#    - task: MavenAuthenticate@0
-#      displayName: 'Maven Authenticate'
-#      inputs:
-#        artifactsFeeds: sia-dds
     - task: Maven@3
       displayName: Build and Deploy Artifacts
       inputs:
